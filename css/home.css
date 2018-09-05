@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|PT+Sans+Caption:700');
+
+body{
+    background-color: #654ea6 !important;
+    color: white !important;
+    margin-left: 25px !important;
+
+}
+
+#header {
+    letter-spacing: 0.09rem;
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    height: 200px;
+    padding: 110px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'PT Sans Caption', sans-serif;
+    
+
+}
+
+#coins {
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    height: 300px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'PT Sans Caption', sans-serif;
+   
+}
+
+#bitcoin {
+    
+    display: inline-block;
+    padding: 125px;
+    letter-spacing: 0.05rem;
+    line-height: 1.7;
+    font-family: 'Anton', sans-serif;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 35px; 
+    
+}
+#litecoin {
+   
+    display: inline-block;
+    padding: 145px;
+    letter-spacing: 0.05rem;
+    line-height: 1.7;
+    font-family: 'Anton', sans-serif;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 35px;
+  }
+
+  .h3{
+      margin-top: 6px;
+  }
+
+#logo_bitcoin {
+    width: 150px;
+    height: 150px;
+}
+
+#logo_litecoin {
+    width: 120px;
+}
+
