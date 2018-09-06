@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/coins.css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
       
@@ -16,15 +17,15 @@
               </div>
               <div id="content" class="col-md-8 col-sm-12">
                 <h2><a href="http://litecoin.org/">Site oficial do projeto</a></h2>
-                <h5 id="get_price">
-                  Cotação em dólar na Bitfinex
-                </h5>
+                <h4 id="get_price">
+                  
+                </h4>
                 <div class="card">
-                    <img class="card-img-top" src="holder.js/100x180/" alt="">
+                    <img class="card-img-top" alt="">
                     <div class="card-body">
-                      <h4 class="card-title">Carteira Litecoin</h4>
+                      <h3 class="card-title">Carteira Litecoin</h3>
                       <p class="card-subtitle">LUuFZapk26TZyHqbYQHZA3vMigKFaoQKdM</p>
-                      <p class="card-text">Saldo total: </p>
+                      <h5 class="card-text"> </h5>
                     </div>
                 </div>
                   <a href="./index.html">
@@ -37,7 +38,18 @@
 
 
 
-
+      <script type="text/javascript">
+        $.get( "https://chain.so/api/v2/get_address_balance/LTC/LUuFZapk26TZyHqbYQHZA3vMigKFaoQKdM/500", function( response ) {
+          $( "h5" )
+            .append( "Saldo total da carteira: " + response.data.confirmed_balance + "</br>");
+        }, "json" );
+        
+        $.get( "https://chain.so/api/v2/get_price/LTC/USD", function( response ) {
+          $( "h4" )
+            .append( "Cotação Bitfinex: USD " + response.data.prices["2"].price + "</br>");
+        }, "json" );
+  
+      </script>
 
 
 
@@ -46,8 +58,7 @@
 
 
     
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   </body>
