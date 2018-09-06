@@ -28,7 +28,7 @@
 #bitcoin {
     
     display: inline-block;
-    padding: 115px;
+    padding: 105px;
     letter-spacing: 0.05rem;
     line-height: 1.7;
     font-family: 'Anton', sans-serif;
@@ -39,7 +39,7 @@
 #litecoin {
    
     display: inline-block;
-    padding: 135px;
+    padding: 125px;
     letter-spacing: 0.05rem;
     line-height: 1.7;
     font-family: 'Anton', sans-serif;
