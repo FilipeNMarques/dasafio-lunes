@@ -6,5 +6,5 @@ Em seguida, quando o usuario clicar, vai ser direcionado para outra página que 
 Em baixo também ele vai ver o saldo de uma carteira que me foi previamente passado.
 
 
-Meu maior desafio foi consumir as informações da API através das requisições no jQuery. Gostei muito, aprendi bastante também.
+Meu maior desafio foi consumir as informações da API através das requisições Ajax. Gostei muito, aprendi bastante também.
 
